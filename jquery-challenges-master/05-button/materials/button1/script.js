@@ -78,4 +78,8 @@ $(document).ready(function(){
     $('div').click(function(){
     	$('p').slideToggle('slow');
     });
+    $('div').click(function(){
+        $("div").hide('fast');
+    });
+
 });

@@ -24,7 +24,6 @@ $(document).ready(function() {
 	});
 	$("#mySql").hover(function(){
 		$("h2").removeClass("active");
-		$("#mySql").addClass("active")
 	});
 	$("#python").hover(function(){
 		$("h2").removeClass("active");
@@ -47,5 +46,6 @@ $(document).ready(function() {
 		function(){
 			$("body").css("background-color","grey");
 		});
-
+	$("first:button").hide('slow');
+	
 });
