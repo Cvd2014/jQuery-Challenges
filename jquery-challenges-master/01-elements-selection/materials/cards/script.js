@@ -41,11 +41,24 @@ $(document).ready(function() {
 		$("h2").removeClass("active");
 		$("#django").addClass("active")
 	});
+	$("#mySql").hover(function(){
+		$("h2").removeClass("active");
+		$("#mySql").addClass("active")
+	});
 	$(".bottom_button").hover(function(){
 		$("body").css("background-color", "black");},
 		function(){
 			$("body").css("background-color","grey");
 		});
-	$("first:button").hide('slow');
-	
+	 $('#firstButton').click(function(){
+    	$('#firstParagraph').toggle('slow');
+    	$('#firstButton').hide('slow');
+    });
+	 $('.bottom_button').mouseenter(function(){
+	 	$(this).fadeTo(1,0.5);
+	 });
+
+	$('.bottom_button').mouseleave(function(){
+	 	$(this).fadeTo(1, 1.0);
+	});
 });

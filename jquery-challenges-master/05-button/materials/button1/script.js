@@ -76,10 +76,8 @@ $(document).ready(function(){
     });
 
     $('div').click(function(){
-    	$('p').slideToggle('slow');
+    	$('p').toggle('slow');
     });
-    $('div').click(function(){
-        $("div").hide('fast');
-    });
+  
 
 });
